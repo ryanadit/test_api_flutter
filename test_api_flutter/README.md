@@ -2,15 +2,12 @@
 
 A new Flutter project.
 
-## Getting Started
+PRETEST 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Pada aplikasi ini saya menjelaskan tentang alur/ flow dari aplikasi ini sebagai berikut :
+1. Pertama initData() pada bloc user data yaitu untuk mengambil data user, dengan inisiasi loading terlebih dahulu
+2. Jika data sudah ter fetch semua maka tampilkan loaded state untuk UI tampilan data nya
+3. Setelah fetch data sudah ditampilkan maka akan ditampilkan dengan listview per card dengan title, id dan body data
+4. Setelah itu terdapat textfield untuk search data berdasarkan id nya dengan menginputkan id nya berupa string, disini saya gunakan textControllerEditing text.
+5. Kemudian muncul data berdasarkan id yang dicari pada listview dibawahnya.
+6. Terdapat tombol refresh untuk merefresh data semua yang ditampilkan pada listview.
