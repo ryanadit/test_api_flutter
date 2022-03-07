@@ -43,6 +43,7 @@ class _MyPageState extends State<MyPage> {
   void dispose() {
     // TODO: implement dispose
     textEditingController.dispose();
+    super.dispose();
   }
 
   @override
@@ -151,12 +152,12 @@ class UserBlocLoadedScreen extends StatelessWidget {
     return ListView.builder(
       itemCount: data!.length,
       itemBuilder: (context, index) {
-        return movieItemWidget(context,data![index]);
+        return itemWidget(context,data![index]);
       },
     );
   }
 
-  Widget movieItemWidget(BuildContext context, UserModel? data){
+  Widget itemWidget(BuildContext context, UserModel? data){
     return Container(
       alignment: Alignment.center,
       child: Card(

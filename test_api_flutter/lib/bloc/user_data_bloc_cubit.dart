@@ -1,5 +1,5 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:equatable/equatable.dart';
 import 'package:test_api_flutter/api/api_service.dart';
 import 'package:test_api_flutter/model/user_model.dart';
 
@@ -21,7 +21,9 @@ class UserDataCubit extends Cubit<UserDataState> {
         emit(UserBlocFailedState());
       }
     }catch (e) {
-      print(e);
+      if (kDebugMode) {
+        print(e);
+      }
       emit(UserBlocFailedState());
     }
 
@@ -39,7 +41,9 @@ class UserDataCubit extends Cubit<UserDataState> {
         emit(UserBlocFailedState());
       }
     }catch (e) {
-      print(e);
+      if (kDebugMode) {
+        print(e);
+      }
       emit(UserBlocFailedState());
     }
 
